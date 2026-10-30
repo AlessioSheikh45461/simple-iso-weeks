@@ -1,6 +1,6 @@
 {
   "name": "simple-iso-weeks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ISO-8601 week numbering for JavaScript with correct year-boundary handling",
   "type": "module",
   "main": "src/index.js",
