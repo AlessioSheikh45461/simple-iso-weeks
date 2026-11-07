@@ -32,3 +32,10 @@ The awkward edges are at year boundaries: 31 December 2020 is week 1 of 2021, an
 ```sh
 node --test
 ```
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
